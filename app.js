@@ -3,11 +3,11 @@ const answerText = document.getElementById("answer");
 
 function sqrt(a) {    
     if (a < 0) {
-      return "Zero Negativity";
+      answerText.InnerText = "No Negative Numbers Allowed";
     } else if (a !== a) {
-      return "There is beauty in every imperfection";
+      answerText.InnerText = "False";
     } else {
-      return "Perfect square!";
+     answerText.InnerText = "True";
     }
     let x,
       x1 = a / 2;
